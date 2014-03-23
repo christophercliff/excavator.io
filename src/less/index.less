@@ -1,0 +1,37 @@
+@COLOR_PRIMARY: #333;
+@COLOR_SECONDARY: #fafafa;
+@FONT_FAMILY_PRIMARY: 'Source Sans Pro', 'Helvetica', 'Arial', 'sans-serif';
+
+.block() {
+    font-size: 28px;
+    line-height: 1.50em;
+    margin: 1.50em 0;
+    padding: 0;
+}
+
+body {
+    background-color: @COLOR_SECONDARY;
+    color: @COLOR_PRIMARY;
+    font-family: @FONT_FAMILY_PRIMARY;
+    margin: 100px;
+    padding: 0;
+}
+    p {
+        .block();
+    }
+    ul {
+        .block();
+        list-style-type: none;
+    }
+    figure {
+        .block();
+        background-color: #fff;
+        border-radius: 10px;
+        display: inline-block;
+        margin: 0;
+        padding: 10px;
+    }
+    a {
+        color: @COLOR_PRIMARY;
+        font-weight: 600;
+    }

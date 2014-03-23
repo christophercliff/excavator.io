@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "name": "excavator.io",
+  "version": "0.0.0",
+  "description": "Collect responsive screenshots and web typography with Excavator",
+  "scripts": {
+    "dev": "node ./build dev",
+    "build": "node ./build",
+    "deploy": "node ./build && cd ./build && git init . && git add . && git commit -m 'Deploy'; git push 'git@github.com:christophercliff/excavator.io.git' gh-pages --force && rm -rf .git"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/christophercliff/christophercliff.github.com.git"
+  },
+  "homepage": "http://excavator.io/",
+  "dependencies": {
+    "connect": "~2.14.2",
+    "handlebars": "~2.0.0-alpha.2",
+    "metalsmith": "^0.3.0",
+    "metalsmith-cleanup": "0.0.1",
+    "metalsmith-less": "^0.0.3",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-templates": "^0.3.0",
+    "metalsmith-watch": "^0.0.2",
+    "underscore": "^1.6.0"
+  }
+}
